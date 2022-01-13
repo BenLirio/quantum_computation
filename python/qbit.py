@@ -14,5 +14,3 @@ class Qbit:
     def __str__(self):
         return '['+', '.join([f"({round(v.real,2)}, {round(v.imag,2)}j)" for v in self.vals])+']'
 
-print(Qbit())
-print(Qbit().is_valid())
